@@ -1,0 +1,63 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="box skills">
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Full Stack</h2>
+		<p>Me entusiasma trabajar en el desarrollo de aplicaciones full-stack y aprender sobre nuevas tecnologías o frameworks que me ayuden a desarrollar aplicaciones y páginas web responsivas.	</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="trophy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Logros y Certificaciones</h2>
+		<p>He obtenido varias certificaciones en desarrollo web y tecnologías relacionadas, incluyendo un bootcamp de desarrollo full-stack en .NET, Angular y TailWind.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Pasatiempos e Intereses</h2>
+		<p>Además de mi pasión por la tecnología, me encantan los animales, me gusta ir al gimnasio regularmente y suelo disfrutar de actividades al aire libre como el senderismo y el buceo.</p>
+	</div>
+	
+</section>
+
+<style>
+	.box {
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.skills h2 {
+		font-size: var(--text-lg);
+	}
+
+	.skills p {
+		color: var(--gray-400);
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+
+		.skills {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 5rem;
+		}
+
+		.skills h2 {
+			font-size: var(--text-2xl);
+		}
+	}
+</style>
