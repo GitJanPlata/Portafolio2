@@ -25,4 +25,8 @@ Para desarrollar este proyecto tuvimos que scrapear datos de prueba para montar 
 
 Para esta aplicación tuvimos que implementar un sistema de autenticación y validación de usuarios mediante JWT, establecer roles de usuarios y administradores, crear toda la logica en el back-end, hacer los endpoints de la API para recibir los datos en el front-end e implementarlos a la logica del front-end. Esta aplicación cuenta con mapa con la ubicacion y precio de todos los hoteles además de una sección donde puedes comparar los que hayas seleccionado como  favoritos.  
 
+#### Tecnologías usadas
+
+  <img alt="Iconos Frontend" src="https://skillicons.dev/icons?i=angular&theme=light&perline=4"> <img alt="Iconos Backend" src="https://skillicons.dev/icons?i=net&theme=light&perline=4">  <img alt="HTML" src="https://skillicons.dev/icons?i=html&theme=light&perline=4"> <img alt="CSS" src="https://skillicons.dev/icons?i=css&theme=light&perline=4"> <img alt="git" src="https://skillicons.dev/icons?i=github&theme=light&perline=4"> 
+
 
