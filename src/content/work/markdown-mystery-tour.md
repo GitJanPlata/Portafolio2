@@ -1,35 +1,28 @@
 ---
-title: Trabajo3
+title: Comparador de hoteles
 publishDate: 2020-03-02 00:00:00
+
 img: /assets/Yado.jpg
 img_alt: Página web para encontrar el hotel mas cercano!
 description: |
-  We designed a whodunnit-style game to introduce Markdown formatting. Suspense — suspicion — syntax!
+  Este proyecto compara hoteles cercanos para ofrecerte la mejor opción según tus preferencias!
 tags:
   - Diseño web
   - Desarrollo full stack
-  - Desarrollo de entorno de usuarios con JWT
+  - Desarrollo de entorno de usuarios
 ---
 
-## Level-two heading
+> "Tell me and I forget. Teach me and I remember. Involve me and I learn."
 
-> Tell me and I forget. Teach me and I remember. Involve me and I learn.
 
-Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
 
-Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel quam elementum pulvinar etiam non.
+Este proyecto fue desarrollado conjuntamente con otros dos compañeros de equipo para el bootcamp de desarrollo full-stack con .NET y Angular, usando Tailwind para los estilos del front-end.
 
-### Level-three heading
+#### Preparaciones
+Para desarrollar este proyecto tuvimos que scrapear datos de prueba para montar una base de datos temporal en la que constaban diferentes hoteles con sus datos. Con estos  pudimos hacer una demostración de las capacidades de nuestra aplicación.
 
-Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra. Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl pretium fusce.
+#### Finalidad de la aplicación
 
-### Level-three heading
+Para esta aplicación tuvimos que implementar un sistema de autenticación y validación de usuarios mediante JWT, establecer roles de usuarios y administradores, crear toda la logica en el back-end, hacer los endpoints de la API para recibir los datos en el front-end e implementarlos a la logica del front-end. Esta aplicación cuenta con mapa con la ubicacion y precio de todos los hoteles además de una sección donde puedes comparar los que hayas seleccionado como  favoritos.  
 
-Sed pulvinar porttitor mi in ultricies. Etiam non dolor gravida eros pulvinar pellentesque et dictum ex. Proin eu ornare ligula, sed condimentum dui. Vivamus tincidunt tellus mi, sed semper ipsum pharetra a. Suspendisse sollicitudin at sapien nec volutpat. Etiam justo urna, laoreet ac lacus sed, ultricies facilisis dolor. Integer posuere, metus vel viverra gravida, risus elit ornare magna, id feugiat erat risus ullamcorper libero. Proin vitae diam auctor, laoreet lorem vitae, varius tellus.
 
-Aenean pretium purus augue, ut bibendum erat convallis quis. Cras condimentum quis velit ac mollis. Suspendisse non purus fringilla, venenatis nisl porta, finibus odio. Curabitur aliquet metus faucibus libero interdum euismod. Morbi sed magna nisl. Morbi odio nibh, facilisis vel sapien eu, tempus tincidunt erat. Nullam erat velit, sagittis at purus quis, tristique scelerisque tortor. Pellentesque lacinia tortor id est aliquam viverra. Vestibulum et diam ac ipsum mollis fringilla.
-
-#### Level-four heading
-
-- We noted this
-- And also this other point
