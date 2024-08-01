@@ -20,9 +20,6 @@ import Skills from '../components/Skills.astro';
 const projects = (await getCollection('work'))
 	.sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
 	.slice(0, 4);
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/basics/astro-components/
 ---
 
 <BaseLayout>
@@ -41,12 +38,7 @@ const projects = (await getCollection('work'))
 					</div>
 				</Hero>
 
-				<img
-					alt="Foto formal"
-					width="480"
-					height="620"
-					src="/assets/perrojan3.jpg"
-					/>
+				
 			</header>
 
 			<Skills />
@@ -208,8 +200,6 @@ const projects = (await getCollection('work'))
 		}
 	}
 
-	/* ====================================================== */
-
 	.mention-card {
 		display: flex;
 		height: 7rem;
@@ -229,4 +219,6 @@ const projects = (await getCollection('work'))
 			height: 9.5rem;
 		}
 	}
+
+	
 </style>
