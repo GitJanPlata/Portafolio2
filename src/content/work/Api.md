@@ -23,7 +23,7 @@ Recoger datos de una API externa como por ejemplo hacer consultas por nombre de 
 #### Tecnologías usadas
 
   <img alt="Iconos Frontend" src="https://skillicons.dev/icons?i=typescript&theme=light&perline=4"> <img alt="HTML" src="https://skillicons.dev/icons?i=html&theme=light&perline=4">   <img alt="CSS" src="https://skillicons.dev/icons?i=css&theme=light&perline=4"> <img alt="Bootsrap" src="https://skillicons.dev/icons?i=bootstrap&theme=light&perline=4">
-  <img alt="Tailwind" src="https://skillicons.dev/icons?i=tailwind&theme=light&perline=4"> <img alt="React" src="https://skillicons.dev/icons?i=react&theme=light&perline=4"> 
+  <img alt="Tailwind" src="https://skillicons.dev/icons?i=tailwind&theme=light&perline=4"> <img alt="React" src="https://skillicons.dev/icons?i=react&theme=light&perline=4">  <img alt="React" src="https://skillicons.dev/icons?i=angular&theme=light&perline=4"> 
 
 <a href="https://rick-morty-personal.vercel.app/register" target="_blank">Rick & Morty API</a>
 
