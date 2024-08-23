@@ -29,4 +29,6 @@ Para esta aplicación tuvimos que implementar un sistema de autenticación y val
 
   <img alt="Iconos Frontend" src="https://skillicons.dev/icons?i=angular&theme=light&perline=4"> <img alt="Iconos Backend" src="https://skillicons.dev/icons?i=net&theme=light&perline=4">  <img alt="HTML" src="https://skillicons.dev/icons?i=html&theme=light&perline=4"> <img alt="Tailwind" src="https://skillicons.dev/icons?i=tailwind&theme=light&perline=4">  <img alt="git" src="https://skillicons.dev/icons?i=github&theme=light&perline=4"> 
 
+<a href="https://main.d2cllapvi2wbve.amplifyapp.com/" target="_blank">¡Visita el repositorio del proyecto aquí!</a>
+
 <a href="https://main.d2cllapvi2wbve.amplifyapp.com/" target="_blank">¡Visita el proyecto desplegado aquí!</a>
