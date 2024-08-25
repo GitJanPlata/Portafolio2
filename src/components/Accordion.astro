@@ -1,0 +1,148 @@
+---
+interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+// Definir las preguntas y respuestas
+const faqs: FAQItem[] = [
+  {
+    question: "¿Qué puedo aportar a tu proyecto/empresa?",
+    answer: "Aparte de mi pasión por programar y mejorar como desarrollador, me considero una persona adaptable, polivalente y autónoma, que valora la comunicación clara y la eficiencia en la resolución de problemas. Me gusta trabajar en equipo ya que me brinda la oportunidad de aprender de otros desarrolladores y mejorar como profesional."
+  },
+  {
+    question: "¿Qué tecnologías sueles usar en tus proyectos?",
+    answer: "Considero que el stack con el que tengo más experiencia es Angular/.NET Framework pero he usado una amplia variedad de tecnologías en mis proyectos, como por ejemplo Typescript, React, Java, Node.js y más. Al final de cada descripción de proyecto en mi portafolio incluyo una lista de las tecnologías utilizadas.",
+  },
+  {
+    question: "¿Cómo puedo contactarte?",
+    answer: "Puedes contactarme a través de la sección de contacto de este portafolio enviándome un correo electrónico o puedes dejarme un mensaje en LinkedIn. Estoy disponible para cualquier consulta laboral.",
+  },
+];
+---
+
+<div class="faq-container">
+  {faqs.map((faq, index) => (
+    <div class="accordion" key={index}>
+      <button
+        class="accordion-button"
+        type="button"
+        aria-expanded="false"
+        aria-controls={`faq${index}-content`}
+        data-index={index}
+      >
+        {faq.question}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          class="accordion-chevron"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <polyline points="6 9 12 15 18 9" />
+        </svg>
+      </button>
+      <div
+        id={`faq${index}-content`}
+        class="accordion-content"
+      >
+        <p>{faq.answer}</p>
+      </div>
+    </div>
+  ))}
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const accordions = document.querySelectorAll('.accordion');
+
+    accordions.forEach(accordion => {
+      const button = accordion.querySelector('.accordion-button');
+      const content = accordion.querySelector('.accordion-content');
+      const chevron = accordion.querySelector('.accordion-chevron');
+
+      button.addEventListener('click', () => {
+        const isOpen = accordion.getAttribute('aria-expanded') === 'true';
+
+        if (isOpen) {
+          // Close accordion
+          accordion.setAttribute('aria-expanded', 'false');
+          content.style.maxHeight = '0px';
+          chevron.classList.remove('rotate');
+        } else {
+          // Open accordion
+          accordion.setAttribute('aria-expanded', 'true');
+          content.style.maxHeight = content.scrollHeight + 'px';
+          chevron.classList.add('rotate');
+        }
+      });
+    });
+  });
+</script>
+
+<style>
+
+.faq-container {
+    width: 100%;
+    max-width: 1200px; /* Ajusta según tus necesidades */
+    margin: 0 auto;
+    padding: 0 16px; /* Ajusta según tus necesidades */
+  }
+  
+  .accordion {
+    position: relative;
+    margin-bottom: 16px;
+    overflow: hidden;
+    border: 1px solid var(--gray-800);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .accordion-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 16px;
+    background: var(--gray-999);
+    border: none;
+    text-align: left;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    color: var(--gray-0);
+    font-size: var(--text-lg);
+  }
+  
+  .accordion-button:hover {
+    color: var(--accent-dark); /* Color de hover, ajusta según tu diseño */
+  }
+  
+  .accordion-chevron {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+  }
+  
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background: var(--gray-999);
+  }
+  
+  .accordion-content p {
+    padding: 16px;
+    margin: 0;
+  }
+  
+  .accordion-chevron.rotate {
+    transform: rotate(180deg);
+  }
+  
+</style>
