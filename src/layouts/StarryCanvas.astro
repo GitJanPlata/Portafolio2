@@ -1,0 +1,78 @@
+---
+---
+
+<style>
+    .starry-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      z-index: -1;
+    }
+  </style>
+  
+  <canvas class="starry-canvas" id="starryCanvas"></canvas>
+  
+  <script>
+    const STAR_COUNT = 200;
+    let stars = [];
+  
+    function random(min, max) {
+      return Math.random() * (max - min) + min;
+    }
+  
+    function createStarrySky() {
+      const canvas = document.getElementById('starryCanvas');
+      const context = canvas.getContext('2d');
+  
+      // Ajustar tamaño del canvas
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+  
+      // Resetear estrellas
+      stars = [];
+  
+      // Crear estrellas
+      for (let i = 0; i < STAR_COUNT; i++) {
+        const star = {
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height,
+          radius: random(0.5, 1.5),
+          alpha: random(0.3, 0.8),
+          alphaChange: random(-0.01, 0.01) // Velocidad de cambio de opacidad
+        };
+        stars.push(star);
+      }
+  
+      // Iniciar la animación
+      animateStars(context, canvas);
+    }
+  
+    function animateStars(context, canvas) {
+      context.clearRect(0, 0, canvas.width, canvas.height);
+  
+      stars.forEach(star => {
+        star.alpha += star.alphaChange;
+  
+        // Invertir dirección de la opacidad cuando alcanza los límites
+        if (star.alpha <= 0.1 || star.alpha >= 0.8) {
+          star.alphaChange *= -1;
+        }
+  
+        context.beginPath();
+        context.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+        context.fillStyle = `rgba(255, 255, 255, ${star.alpha})`;
+        context.fill();
+      });
+  
+      requestAnimationFrame(() => animateStars(context, canvas));
+    }
+  
+    if (typeof window !== 'undefined') {
+      window.addEventListener('load', createStarrySky);
+      window.addEventListener('resize', createStarrySky);
+    }
+  </script>
+  

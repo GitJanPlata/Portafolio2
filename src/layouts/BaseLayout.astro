@@ -5,6 +5,7 @@
 	import MainHead from '../components/MainHead.astro';
 	import Nav from '../components/Nav.astro';
 	import Footer from '../components/Footer.astro';
+import StarryCanvas from './StarryCanvas.astro';
 
 	interface Props {
 		title?: string | undefined;
@@ -20,6 +21,7 @@
 		</head>
 		<body>
 			<div>
+				<StarryCanvas />
 				<Nav />
 				<slot />
 				<Footer />
