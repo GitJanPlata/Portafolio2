@@ -17,12 +17,17 @@
   :global(.theme-dark) .starry-canvas {
     display: block;
   }
+  @media (max-width: 768px) {
+    :global(.theme-dark) .starry-canvas {
+    display: none;
+  }
+}
 </style>
 
 <canvas class="starry-canvas" id="starryCanvas"></canvas>
 
 <script>
-  const STAR_COUNT = 200;
+  const STAR_COUNT = 100  ;
   let stars = [];
 
   function random(min, max) {
